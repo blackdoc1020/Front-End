@@ -1,0 +1,38 @@
+#1 표기법
+
+dash-case(kebab-case) #HTML,CSS
+Ex) the-quick-brown-fox-jumps-over-the-lazy-dog
+첫 글자 단어 부터 끝 문자 까지 하나의 단어로 인식함(컴퓨터)
+사용자는 띄어쓰기를 볼수 있음
+
+snake_case #HTML,CSS
+Ex)the_quick_brown_fox_jumps_over_the_lazy_doc
+
+camelCase #JS
+Ex)theQuickBrownFoxJumpsvertThelLazyDog
+
+PascalCase #JS
+Ex)TheQuickBrownFoxJumpsvertThelLazyDog
+
+
+
+#2 Zero-based Numbering
+0 기반 번호 매기기!
+특수한 경우를 제외하고 0부터 숫자를 시작합니다
+
+#3 주석 (단축키 : cmd+/)
+// 한 줄 메모
+/* 한 줄 메모 */
+
+/*
+여러줄
+1
+2
+*/
+
+
+
+
+
+
+
