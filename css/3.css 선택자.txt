@@ -1,0 +1,79 @@
+CSS 선택자
+기본, 복합, 가상 클래스, 가상 요소, 속성
+
+#1. 기본 선택자
+
+* : 전체 선택자(Universal Selector), 기본
+모든 요소를 선택.
+ex) 
+*{
+    color: red;
+}
+
+ABC: 태그 선택자(Type Selector), 기본
+태그 이름이 ABC인 요소 선택
+ex)
+li{
+    color:red;
+}
+
+.ABC: 클래스 선택자(Class Selector), 기본
+HTML class 속성의 값이 ABC인 요소 선택
+ex)
+.orange{
+    color: red;
+}
+
+#ABC 아이디 선택자(ID Selector), 기본
+HTML id 속성의 값이 ABC인 요소 선택
+ex)
+#orange{
+    color: red;
+}
+
+#2. 복합 선택자
+
+ABCXYZ : 일치 선택자(Basic Combinator), 복합
+선택자 ABC와 XYZ를 동시에 만족하는 요소 선택
+ex)
+span.orange{
+    color: red;
+}
+
+ABC > XYZ : 자식 선택자(Child Combinator), 복합
+선택자 ABC의 자식 요소 XYZ 선택.
+ex)
+ul > .orange{
+    color: red;
+}
+
+ABC XYZ 하위(후손) 선택자 (Descendatn Conbinator)
+선택자 ABC의 하위 요소 XYZ 선택.
+'띄어쓰기'가 선택자의 기호!
+ex)
+div .orange{
+    color: red;
+}
+
+ABC + XYZ 인접 형제 선택자(Adjacent Sibling Combinator)
+선택자 ABC의 다음 형제 요소 XYZ 하나를 선택
+ex)
+.orange + li{
+    color: red;
+}
+
+ABC ~ XYZ : 일반 형제 선택자(General Sibling Combinator)
+선택자 ABC의 다음 형제 요소 XYZ 모두를 선택
+ex)
+.orange ~ li{
+    color: red;
+}
+
+#3. 선택자_가상 클래스
+
+ABC:hover : 가상 클래스 선택자(Pseudo-Classes) HOVER
+선택자 ABC요소에 마우스 커서가 올라가 있는 동안 선택.
+ex)
+a:hover{
+    color: red;
+}

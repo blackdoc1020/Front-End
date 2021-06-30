@@ -1,0 +1,25 @@
+#가상클래스_선택자
+
+ABC:hover : HOVER, 가상 클래스 선택자
+선택자 ABC 요소에 마우스 커서가 올라가 있는 동안 선택.
+
+a:hover{
+    color: red;
+}
+
+ABC:active : ACTIVE, 가상 클래스 선택자
+선택자 ABC 요소에 마우스를 클릭하고 있는 동안 선택.
+a:active{
+    color:red;
+}
+
+ABC:focus :FOCUS, 가상 클래스 선택자
+선택자 ABC 요소가 포커스되면 선택
+
+input:focus{
+    background-color: orange;
+}
+Fcous가  될 수 있는 요소는 HTML 대화형 콘텐츠가 해당합니다.
+INPUT, A, BUTTON, LABEL, SELECT 등 여러 요소가 있습니다.
+그리고 HTML 대화형 콘텐츠 요소가 아니더라도
+tabindex 속성을 사용한 요소도 Focus가 될 수 있습니다.
