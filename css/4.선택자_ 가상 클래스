@@ -23,3 +23,57 @@ Fcous가  될 수 있는 요소는 HTML 대화형 콘텐츠가 해당합니다.
 INPUT, A, BUTTON, LABEL, SELECT 등 여러 요소가 있습니다.
 그리고 HTML 대화형 콘텐츠 요소가 아니더라도
 tabindex 속성을 사용한 요소도 Focus가 될 수 있습니다.
+
+#가상클래스_선택자2
+
+ABC:first-child : FIRST CHILD, 가상 클래스 선택자
+선택자 ABC가 형제 요소 중 첫째라면 선택.
+
+.fruits span:first-child{
+    color: red;
+}
+첫번째가 아닐 때 "?" 표시가 나타남
+
+
+ABC:last-child : LAST CHILD, 가상 클래스 선택자
+선택자 ABC가 형제 요소 중 막내라면 선택.
+ex)
+.fruits h3:last-child{
+    color: red;
+}
+
+ABC:nth-child : NTH CHILD, 가상 클래스 선택자
+선택자 ABC가 형제 요소 중 (n)째라면 선택.
+
+.fruits *:nth-child(n){
+    color: red;
+}
+
+//짝수를 뽑고 싶을때
+.fruits *:nth-child(2n){
+    color: red;
+}
+
+//홀수를 뽑고 싶을때
+.fruits *:nth-child(2n+1){
+    color: red;
+}
+
+//지정 번째 부터 계속 뽐고 싶을 때
+.fruits *:nth-child(n+2){
+    color: red;
+}
+
+비고
+.fruits *:nth-child(-n+3){
+    color: red;
+}
+
+
+
+ABC:not(XYZ) : NOT, 부정 선택자(Negation)
+선택자 XYZ가 아닌 ABC 요소 선택 
+ex)
+.fruits *:not(span){
+    color: red;
+}

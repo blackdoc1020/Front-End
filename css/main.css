@@ -14,11 +14,19 @@ div{
     width: 300px;
     background-color: royalblue;
 }
-
 input{
-
+    
 }
+
 
 input:focus{
    background-color: orange; 
+}
+
+.box::after{
+    content: "";
+    display: block;
+    width: 30;
+    height: 30;
+    background-color: rosybrown;
 }
